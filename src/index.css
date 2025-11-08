@@ -25,12 +25,12 @@
   --lineHeight-lg: 1.75;
   --lineHeight-xl: 2;
   /* Colors */
-  --color-primary: #059b00;
-  --color-primary-dark: #046000;
-  --color-primary-light: #0ee006;
-  --color-secondary: #19debc;
-  --color-secondary-dark: #0f7c6a;
-  --color-secondary-light: #1fffda;
+  --color-primary: #bf95a4;
+  --color-primary-dark: #261e21;
+  --color-primary-light: #f9f4f6;
+  --color-secondary: #4a2d7c;
+  --color-secondary-dark: #341f57;
+  --color-secondary-light: #edeaf2;
   --color-white: #fff;
   --color-light: #e6e6e6;
   --color-gray: #adb5bd;
@@ -47,7 +47,7 @@ html{
   box-sizing: border-box;
 }
 body{
-   font-family: "Open Sans", sans-serif;
+   font-family: "Roboto", sans-serif;
    font-weight: var(--fontWeight-medium);
    line-height: var(--lineHeight-base);
    color: var(--color-dark);
