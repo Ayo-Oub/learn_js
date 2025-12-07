@@ -1,0 +1,20 @@
+.content-container{
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     padding: 2rem 1.5rem;
+     margin-left: 2rem;
+}
+.content-container .title{
+     color: var(--color-primary-dark);
+}
+.content-container .sub-title{
+     color: var(--color-primary-light);
+     font-weight: var(--fontWeight-regular);
+}
+.content-container span{
+     background-color: var(--color-secondary-dark);
+     color: var(--color-dark);
+     padding: 1px 3px;
+     border-radius: 5px;
+}

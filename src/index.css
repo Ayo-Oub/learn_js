@@ -1,5 +1,5 @@
 /* Start rules general */
-:root{
+:root {
   /* Font size */
   --fontSize-xs: 1.2rem;
   --fontSize-sm: 1.4rem;
@@ -25,66 +25,80 @@
   --lineHeight-lg: 1.75;
   --lineHeight-xl: 2;
   /* Colors */
-  --color-primary: #bf95a4;
-  --color-primary-dark: #261e21;
-  --color-primary-light: #f9f4f6;
-  --color-secondary: #4a2d7c;
-  --color-secondary-dark: #341f57;
-  --color-secondary-light: #edeaf2;
+  --color-primary: #ff6d23 ;
+  --color-primary-dark: #cd5316;
+  --color-primary-light: #fba377;
+  --color-secondary: #b9cd05;
+  --color-secondary-dark: #e6ff08;
+  --color-secondary-light: #f9ffc0;
   --color-white: #fff;
   --color-light: #e6e6e6;
   --color-gray: #adb5bd;
   --color-dark: #212529;
   --color-black: #000;
 }
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
-   font-family: "Roboto", sans-serif;
-   font-weight: var(--fontWeight-medium);
-   line-height: var(--lineHeight-base);
-   color: var(--color-dark);
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: var(--fontWeight-medium);
+  line-height: var(--lineHeight-base);
+  color: var(--color-light);
+  background-color: var(--color-dark);
 }
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: var(--fontWeight-bold);
   line-height: var(--lineHeight-sm);
-  color: var(--color-black);
 }
-h1{
-  font-size: var(--fontSize-4xl);
-}
-h2{
+h1 {
   font-size: var(--fontSize-3xl);
 }
-h3{
+h2 {
   font-size: var(--fontSize-2xl);
 }
-h4{
+h3 {
   font-size: var(--fontSize-xl);
 }
-p{
+h4 {
   font-size: var(--fontSize-lg);
 }
-a{
+p {
+  font-size: var(--fontSize-base);
+}
+a {
   font-size: var(--fontSize-base);
   text-decoration: none;
   display: inline-block;
 }
-ul{
-  list-style: none;
+ul, ol{
+  
+  list-style-position: inside;
+  margin-left: 1rem;
 }
-span{
+ul{
+list-style-type: square;
+}
+li {
+  font-size: var(--fontSize-base);
+}
+span {
   display: inline-block;
 }
-.container{
+.container {
   max-width: 1320px;
   width: 90%;
   margin: 0 auto;
+  padding: 1rem;
 }
