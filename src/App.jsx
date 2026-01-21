@@ -10,7 +10,7 @@ function App() {
         path: "/",
         element: <Home />,
         children: [
-          { path: "intro_dom", element: <IntroDom /> },
+          { path: "intro_dom", index: true, element: <IntroDom /> },
           { path: "select_element_in_the_dom", element: <SelectEleDom /> },
         ],
       },
