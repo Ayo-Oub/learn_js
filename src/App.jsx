@@ -5,7 +5,7 @@ import SelectEleDom from './pages/contents/SelectEleDom'
 function App() {
   const route = createBrowserRouter([
     {
-      path: "/learnJS",
+      path: "/learn_js",
       element: <Home />,
       children: [
         { path: "intro_dom", element: <IntroDom /> },
