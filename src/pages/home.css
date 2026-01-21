@@ -6,3 +6,10 @@
 .home-content {
   display: flex;
 }
+@media (max-width: 38.75rem){
+  /* 620 px / 16px = 38.75rem */
+  .home-content {
+  display: flex;
+  flex-direction: column;
+}
+}

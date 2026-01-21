@@ -102,3 +102,10 @@ span {
   margin: 0 auto;
   padding: 1rem;
 }
+@media (max-width: 38.75rem){
+  /* 620 px / 16px = 38.75rem */
+  html{
+    font-size: 50%;
+    /* 6px / 16px = 37.5% */
+  }
+}
