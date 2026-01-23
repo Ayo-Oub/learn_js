@@ -16,7 +16,7 @@ export default function IntroDom() {
       <h4 className="sub-title">2. Pourquoi le DOM existe ?</h4>
       <p>
         Pour permettre à JavaScript de modifier la page après son chargement,
-        par exemple :{" "}
+        par exemple :
       </p>
       <ul>
         <li>Changer du text</li>
