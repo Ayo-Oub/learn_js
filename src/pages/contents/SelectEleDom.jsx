@@ -61,6 +61,13 @@ export default function SelectEleDom() {
       <p>Retourne un seul élément.</p>
       <h4 className="sub-title">4. querySelectorAll() (Méthode moderne)</h4>
       <p>Sélectionne tous les éléments qui correspondent au sélecteur CSS</p>
+      <p>Retourne une NodeList (proche d'un tableau).</p>
+      <CodeContainer content={codes_select_Ele_dom[7]} />
+      <p>Note important : <span>HTMLCollection ≠ NodeList</span> </p>
+      <ul>
+        <li>HTMLCollection est une collection dynamique (mise à jour automatique)</li>
+        <li>NodeList est une collection statique (ne se met pas à jour)</li>
+      </ul>
     </div>
   );
 }

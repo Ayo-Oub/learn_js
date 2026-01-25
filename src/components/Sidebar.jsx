@@ -21,6 +21,14 @@ export default function Sidebar() {
             Sélectionner des éléments dans le DOM
           </Link>
         </li>
+        <li>
+          <Link
+            to="modf_conte_dom"
+            className="link"
+          >
+            Modifier le contenu du DOM
+          </Link>
+        </li>
       </ul>
     </div>
   );

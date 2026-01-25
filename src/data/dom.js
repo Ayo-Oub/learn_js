@@ -30,4 +30,14 @@ console.log(items); // collection
 `,
   `const firstItem = document.querySelector(".item");
 `,
+  `const allItems = document.querySelectorAll(".item");
+allItems.forEach(el => console.log(el));
+`,
+];
+export const codes_modf_conte_dom = [
+  `<p id="msg">Bonjour</p>
+`,
+  `const msg = document.getElementById("msg");
+msg.textContent = "Salut Ayoub";
+`,
 ];
