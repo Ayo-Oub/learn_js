@@ -29,6 +29,14 @@ export default function Sidebar() {
             Modifier le contenu du DOM
           </Link>
         </li>
+        <li>
+          <Link
+            to="modf_attr_dom"
+            className="link"
+          >
+            Modifier les attributs des éléments
+          </Link>
+        </li>
       </ul>
     </div>
   );

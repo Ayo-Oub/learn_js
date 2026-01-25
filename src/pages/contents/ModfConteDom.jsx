@@ -45,6 +45,14 @@ function ModfConteDom() {
       <p>Danger : injection de code si contenu vient de l’utilisateur.</p>
       <p>Utile pour générer des blocs HTML rapidement.</p>
       <h4 className="sub-title">4. Modifier la valeur des inputs</h4>
+      <p>Pour modifier la valeur d’un input, on utilise la propriété value.</p>
+      <p>Exemple:</p>
+      <CodeContainer
+        content={codes_modf_conte_dom[5]}
+        language="html"
+      />
+      <CodeContainer content={codes_modf_conte_dom[6]} />
+      <p>value ≠ textContent</p>
     </div>
   );
 }

@@ -47,4 +47,10 @@ msg.textContent = "Salut Ayoub";
   `const box = document.getElementById("box");
 box.innerHTML = "<strong>Important</strong>";
 `,
+  `<input id="name" value="Ayoub">
+`,
+  `const input = document.getElementById("name");
+input.value = "Ahmed";
+`,
 ];
+export const codes_modf_attr_dom = [];
