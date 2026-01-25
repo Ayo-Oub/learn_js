@@ -40,4 +40,11 @@ export const codes_modf_conte_dom = [
   `const msg = document.getElementById("msg");
 msg.textContent = "Salut Ayoub";
 `,
+  `element.innerText = "Texte visible seulement";
+`,
+  `<div id="box"></div>
+`,
+  `const box = document.getElementById("box");
+box.innerHTML = "<strong>Important</strong>";
+`,
 ];
