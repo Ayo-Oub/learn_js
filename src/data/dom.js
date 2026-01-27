@@ -53,4 +53,33 @@ box.innerHTML = "<strong>Important</strong>";
 input.value = "Ahmed";
 `,
 ];
-export const codes_modf_attr_dom = [];
+export const codes_modf_attr_dom = [
+  `<img id="img" src="photo1.jpg">
+`,
+  `const img = document.getElementById("img");
+console.log(img.getAttribute("src")); // photo1.jpg
+`,
+  `img.setAttribute("src", "photo2.jpg");
+img.setAttribute("alt", "Nouvelle image");
+`,
+  `img.removeAttribute("alt");
+`,
+  `img.src = "photo3.jpg";
+link.href = "https://google.com";
+input.value = "Ayoub";
+`,
+  `element.id = "newId";
+`,
+  `element.hasAttribute("disabled");
+`,
+  `<button id="btn">Activer</button>
+<input id="input" disabled>
+`,
+  `const btn = document.getElementById("btn");
+const input = document.getElementById("input");
+
+btn.addEventListener("click", () => {
+  input.removeAttribute("disabled");
+});
+`,
+];

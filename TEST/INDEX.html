@@ -6,12 +6,14 @@
      <title>Test</title>
 </head>
 <body>
-     <h2 id="title">Suite Numérique</h2>
-     <p class="suite">Suite arithmétique</p>
-     <p class="suite">Suite géométrique</p>
+     <button>Activer</button>
+     <input type="text" disabled/>
      <script>
-          const t = document.getElementById("title");
-          t.innerHTML = "<h6>Fonctions</h6>"
+          const btn = document.querySelector("button");
+          const input = document.querySelector("input");
+          btn.addEventListener("click", () => {
+               input.removeAttribute("disabled");
+          });
           
      </script>
 </body>
