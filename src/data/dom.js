@@ -83,3 +83,11 @@ btn.addEventListener("click", () => {
 });
 `,
 ];
+export const codes_modf_sty_class_dom = [
+  `const box = document.querySelector(".box");
+
+box.style.backgroundColor = "red";
+box.style.width = "200px";
+box.style.borderRadius = "10px";
+`,
+];

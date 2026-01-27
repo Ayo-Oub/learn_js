@@ -4,6 +4,7 @@ import IntroDom from "./pages/contents/IntroDom";
 import SelectEleDom from "./pages/contents/SelectEleDom";
 import ModfConteDom from "./pages/contents/ModfConteDom";
 import ModfAttrDom from "./pages/contents/ModfAttrDom";
+import ModfStyClassDom from "./pages/contents/ModfStyClassDom";
 
 function App() {
   const router = createBrowserRouter(
@@ -16,6 +17,7 @@ function App() {
           { path: "select_element_in_the_dom", element: <SelectEleDom /> },
           { path: "modf_conte_dom", element: <ModfConteDom /> },
           { path: "modf_attr_dom", element: <ModfAttrDom /> },
+          { path: "modf_sty_class_dom", element: <ModfStyClassDom /> },
         ],
       },
     ],
