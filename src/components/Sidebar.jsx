@@ -1,8 +1,19 @@
-import './sidebar.css'
-import { Link } from 'react-router';
+import "./sidebar.css";
+import { Link } from "react-router";
 export default function Sidebar() {
   return (
     <div className="sideBar-container">
+      <h4>JavaScript</h4>
+      <ul>
+        <li>
+          <Link
+            to="numbers"
+            className="link"
+          >
+            Les nombres
+          </Link>
+        </li>
+      </ul>
       <h4>DOM</h4>
       <ul>
         <li>
@@ -43,6 +54,30 @@ export default function Sidebar() {
             className="link"
           >
             Modifier le style et les classes
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="create_delete_ele_dom"
+            className="link"
+          >
+            Créer et supprimer des éléments
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="nav_dom"
+            className="link"
+          >
+            Naviguer dans le DOM
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="events_dom"
+            className="link"
+          >
+            Les évènements
           </Link>
         </li>
       </ul>

@@ -5,6 +5,10 @@ import SelectEleDom from "./pages/contents/SelectEleDom";
 import ModfConteDom from "./pages/contents/ModfConteDom";
 import ModfAttrDom from "./pages/contents/ModfAttrDom";
 import ModfStyClassDom from "./pages/contents/ModfStyClassDom";
+import CreateDeleteEleDom from "./pages/contents/CreateDeleteEleDom";
+import NavDom from "./pages/contents/NavDom";
+import EventsDom from "./pages/contents/EventsDom";
+import Numbers from "./pages/js_contents/Numbers";
 
 function App() {
   const router = createBrowserRouter(
@@ -18,6 +22,11 @@ function App() {
           { path: "modf_conte_dom", element: <ModfConteDom /> },
           { path: "modf_attr_dom", element: <ModfAttrDom /> },
           { path: "modf_sty_class_dom", element: <ModfStyClassDom /> },
+          { path: "create_delete_ele_dom", element: <CreateDeleteEleDom /> },
+          { path: "nav_dom", element: <NavDom /> },
+          { path: "events_dom", element: <EventsDom /> },
+          // Le contenue de JS peut être ajouté ici plus tard
+          { path: "numbers", element: <Numbers /> },
         ],
       },
     ],

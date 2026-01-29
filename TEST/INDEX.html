@@ -3,18 +3,44 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .change-color {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+     </style>
      <title>Test</title>
 </head>
 <body>
-     <button>Activer</button>
-     <input type="text" disabled/>
-     <script>
-          const btn = document.querySelector("button");
-          const input = document.querySelector("input");
-          btn.addEventListener("click", () => {
-               input.removeAttribute("disabled");
-          });
-          
-     </script>
+    <div class="change-color"></div>
+    <button>Changer la couleur</button>
+
+<script>
+ const button = document.querySelector('button');
+ const changeColor = document.querySelector('.change-color');
+button.addEventListener('click', () => {
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    changeColor.style.backgroundColor = randomColor;
+ });
+</script>
 </body>
 </html>

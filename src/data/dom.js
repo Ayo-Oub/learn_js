@@ -90,4 +90,127 @@ box.style.backgroundColor = "red";
 box.style.width = "200px";
 box.style.borderRadius = "10px";
 `,
+  `box.classList.add("active");
+`,
+  `box.classList.remove("active");
+`,
+  `box.classList.toggle("active");
+`,
+  `box.classList.contains("active");
+`,
+  `.dark {
+  background: #111;
+  color: white;
+}
+`,
+  `const btn = document.querySelector("#toggle");
+const body = document.body;
+
+btn.addEventListener("click", () => {
+  body.classList.toggle("dark");
+});
+`,
+];
+export const codes_create_delete_ele_dom = [
+  `const div = document.createElement("div");
+`,
+  `div.textContent = "Hello DOM";
+`,
+  `div.innerHTML = "<strong>Hello</strong>";
+`,
+  `div.classList.add("box");
+div.setAttribute("id", "card1");
+`,
+  `document.body.append(div);
+`,
+  `parent.appendChild(div);
+`,
+  `parent.prepend(div);
+`,
+  `div.remove();
+`,
+  `parent.removeChild(div);
+`,
+  `<button id="add">Ajouter</button>
+<div id="container"></div>
+`,
+  `const btn = document.getElementById("add");
+const container = document.getElementById("container");
+
+btn.addEventListener("click", () => {
+  const card = document.createElement("div");
+  card.textContent = "Nouvelle carte";
+  card.classList.add("card");
+
+  container.append(card);
+});
+`,
+  `const clone = card.cloneNode(true);
+container.append(clone);
+`,
+];
+export const codes_nav_dom = [
+  `element.parentElement
+`,
+  `const p = document.querySelector("p");
+console.log(p.parentElement);
+`,
+  `element.children
+`,
+  `element.firstElementChild
+`,
+  `element.lastElementChild
+`,
+  `element.nextElementSibling
+`,
+  `element.previousElementSibling
+`,
+  `<ul id="list">
+  <li>Un</li>
+  <li class="active">Deux</li>
+  <li>Trois</li>
+</ul>
+`,
+  `const active = document.querySelector(".active");
+
+active.parentElement.style.border = "2px solid red";
+active.nextElementSibling.style.color = "green";
+active.previousElementSibling.style.color = "blue";
+`,
+];
+export const codes_events_dom = [
+  `<button id="myButton">Cliquez-moi</button>
+`,
+  `const button = document.getElementById("myButton");
+
+button.addEventListener("click", function() {
+  alert("Bouton cliqué !");
+});
+`,
+  `button.addEventListener("mouseover", function() {
+  console.log("Souris au-dessus du bouton");
+});
+`,
+  `button.addEventListener("mouseout", function() {
+  console.log("Souris quittant le bouton");
+});
+`,
+  `<input type="text" id="myInput" placeholder="Tapez quelque chose">
+`,
+  `const input = document.getElementById("myInput");
+
+input.addEventListener("keydown", function(event) {
+  console.log("Touche enfoncée :", event.key);
+});
+`,
+  `element.addEventListener("click", (event) => {
+  console.log(event.target);
+});
+`,
+  `form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
+`,
+  `e.stopPropagation();
+`,
 ];
